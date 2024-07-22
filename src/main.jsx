@@ -6,14 +6,15 @@ import { BrowserRouter } from 'react-router-dom'
 import CoinContextProvider from './context/CoinContext.jsx'
 
 ReactDOM.createRoot(document.getElementById('root')).render(
+  // creating virtual dom
 
   <React.StrictMode>
-    <BrowserRouter>
-      <CoinContextProvider>
-        <App />
-      </CoinContextProvider>
+      <BrowserRouter>
+         <CoinContextProvider>
+           <App />
+         </CoinContextProvider>
 
-    </BrowserRouter>
+     </BrowserRouter>
   </React.StrictMode>,
 )
 
