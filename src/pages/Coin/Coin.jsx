@@ -60,24 +60,18 @@ const Coin = () => {
                 <li> Crypto Market Rank</li>
                 <li> { coinData.market_cap_rank}</li>
               </ul>
-
               <ul>
                 <li> Current Price</li>
                 <li> {currency.symbol} { coinData.market_data.current_price[currency.name].toLocaleString()}</li>
               </ul>
-
               <ul>
                 <li> Market Cap</li>
                 <li> {currency.symbol} { coinData.market_data.market_cap[currency.name].toLocaleString()}</li>
               </ul>
-
-              
               <ul>
                 <li> 24 Hour high</li>
                 <li> {currency.symbol} { coinData.market_data.high_24h[currency.name].toLocaleString()}</li>
-              </ul>
-
-              
+              </ul>        
               <ul>
                 <li> 24 Hour low</li>
                 <li> {currency.symbol} { coinData.market_data.low_24h[currency.name].toLocaleString()}</li>
